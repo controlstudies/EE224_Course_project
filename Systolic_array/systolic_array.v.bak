@@ -1,0 +1,30 @@
+module systolic_array #(parameter row= 8, col = 8,w = 8) // 8*8 matrix with each element having 8 bits
+(input wire clk,
+input wire rst,
+input wire [w-1:0] ain [col-1:0],
+input wire [w-1:0] bin [row-1:0],
+output wire [w-1:0] out [row-1:0][col-1:0]
+);
+		wire [w-1:0] aout[row-1:0][col-1:0];
+		wire [w-1:0] bout [row-1:0][col-1:0];
+		genvar i,k;
+		generate 
+			for(i=0;i<row;i=i+1)begin : row_gen
+				for(k=0;k<col;k=k+1)begin : col_gen
+						if(i == 0)begin
+						
+								if(k==0) processing_element pe_00(.clk(clk),.rst(rst),.ain(ain[0]),.bin(bin[0]),.aout(aout[0][0]),.bout(bout[0][0]),.cout(out[i][k]))
+						
+								else processing_element pe_0k(.clk(clk),.rst(rst),.ain(ain[k]),.bin(bout[i][k-1]),.aout(aout[0][k]),.bout(bout[i][0]),.cout(out[i][k]));
+						end
+						else begin 
+						
+							if(k==0) processing_element pei0(.clk(clk),.rst(rst),.ain(ain[i-1]),.bin(bin[i]),.aout(aout[i][k]),.bout(bout[i][k]),.cout(out[i][k]))
+							
+							else processing_element peik(.clk(clk),.rst(rst),.ain(aout[i-1][k]),.bin(bout[i][k-1]),.aout(aout[i][k]),.bout(bout[i][k]),.cout(out[i][k]))
+						end
+					end
+			end
+		endgenerate;
+
+endmodule;

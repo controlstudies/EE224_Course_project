@@ -1,0 +1,84 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/EE224_Project/simulation/modelsim
+vprocessing_element
+Z1 !s110 1793539528
+!i10b 1
+!s100 FEL2NlWIAlW9bVSV960OK0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I7?e<cIUZS29IA:F`4f1o^0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1793538247
+8E:/EE224_Project/pe.v
+FE:/EE224_Project/pe.v
+!i122 0
+L0 1 24
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1793539528.000000
+!s107 E:/EE224_Project/pe.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EE224_Project|E:/EE224_Project/pe.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+E:/EE224_Project
+Z8 tCvgOpt 0
+vsystolic_array
+R1
+!i10b 1
+!s100 8R0J@daQBMZR9EMfhfdhi0
+R2
+I;8;dR7NbTK;LQek`HSD3Z1
+R3
+R0
+w1793539487
+8E:/EE224_Project/systolic_array.v
+FE:/EE224_Project/systolic_array.v
+!i122 1
+L0 1 44
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/EE224_Project/systolic_array.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EE224_Project|E:/EE224_Project/systolic_array.v|
+!i113 1
+R6
+R7
+R8
+vTestbench
+R1
+!i10b 1
+!s100 e5_709Kh_k1N4[XobLoMc2
+R2
+IB@4OPfo0X^Bm>a?e>i<nm2
+R3
+R0
+w1793539344
+8E:/EE224_Project/Testbench.v
+FE:/EE224_Project/Testbench.v
+!i122 2
+L0 3 123
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/EE224_Project/Testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EE224_Project|E:/EE224_Project/Testbench.v|
+!i113 1
+R6
+R7
+R8
+n@testbench
