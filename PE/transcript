@@ -1,0 +1,23 @@
+# vsim work.Processing_element_TB 
+# Start time: 20:15:54 on Nov 25,2026
+# Loading work.Processing_element_TB
+# Loading work.Processing_element
+add wave clk rst
+add wave -radix unsigned ain bin aout bout cout
+run -all
+# ain =   3  bin =   4  cout =    12
+# ain =   5  bin =   6  cout =    42
+# ain =  10  bin =   2  cout =    62
+# ain =   0  bin =  15  cout =    62
+# ain =  20  bin =   0  cout =    62
+# ain = 255  bin = 255  cout = 65025
+# 
+# Mismatches: 0
+# ** Note: $finish    : Processing_element_TB.v(106)
+#    Time: 106 ns  Iteration: 0  Instance: /Processing_element_TB
+# 1
+# Break in Module Processing_element_TB at Processing_element_TB.v line 106
+wave zoom full
+# {0 ps} {111300 ps}
+# End time: 20:18:54 on Nov 25,2026, Elapsed time: 0:03:00
+# Errors: 0, Warnings: 0

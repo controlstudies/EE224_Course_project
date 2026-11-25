@@ -1,113 +1,115 @@
 # vsim -c work.CNN_Testbench -do "run -all; quit" 
-# Start time: 19:35:53 on Nov 25,2026
+# Start time: 20:25:07 on Nov 25,2026
 # Loading work.CNN_Testbench
 # Loading work.systolic_array
 # Loading work.processing_element
 # run -all
-# Image  0:  Label = 0   Predicted = 0   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image  1:  Label = 0   Predicted = 0   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image  2:  Label = 0   Predicted = 0   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image  3:  Label = 0   Predicted = 0   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image  4:  Label = 0   Predicted = 0   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image  5:  Label = 0   Predicted = 0   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image  6:  Label = 0   Predicted = 0   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image  7:  Label = 0   Predicted = 0   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image  8:  Label = 0   Predicted = 0   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image  9:  Label = 0   Predicted = 0   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 10:  Label = 1   Predicted = 1   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 11:  Label = 1   Predicted = 1   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 12:  Label = 1   Predicted = 1   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 13:  Label = 1   Predicted = 1   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 14:  Label = 1   Predicted = 1   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 15:  Label = 1   Predicted = 1   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 16:  Label = 1   Predicted = 1   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 17:  Label = 1   Predicted = 1   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 18:  Label = 1   Predicted = 1   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 19:  Label = 1   Predicted = 1   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 20:  Label = 2   Predicted = 2   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 21:  Label = 2   Predicted = 2   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 22:  Label = 2   Predicted = 2   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 23:  Label = 2   Predicted = 2   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 24:  Label = 2   Predicted = 2   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 25:  Label = 2   Predicted = 2   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 26:  Label = 2   Predicted = 2   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 27:  Label = 2   Predicted = 2   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 28:  Label = 2   Predicted = 2   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 29:  Label = 2   Predicted = 2   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 30:  Label = 3   Predicted = 3   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 31:  Label = 3   Predicted = 3   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 32:  Label = 3   Predicted = 3   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 33:  Label = 3   Predicted = 3   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 34:  Label = 3   Predicted = 3   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 35:  Label = 3   Predicted = 3   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 36:  Label = 3   Predicted = 3   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 37:  Label = 3   Predicted = 3   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 38:  Label = 3   Predicted = 3   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 39:  Label = 3   Predicted = 3   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 40:  Label = 4   Predicted = 4   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 41:  Label = 4   Predicted = 4   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 42:  Label = 4   Predicted = 4   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 43:  Label = 4   Predicted = 4   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 44:  Label = 4   Predicted = 4   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 45:  Label = 4   Predicted = 4   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 46:  Label = 4   Predicted = 4   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 47:  Label = 4   Predicted = 4   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 48:  Label = 4   Predicted = 4   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 49:  Label = 4   Predicted = 4   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 50:  Label = 5   Predicted = 5   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 51:  Label = 5   Predicted = 5   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 52:  Label = 5   Predicted = 5   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 53:  Label = 5   Predicted = 5   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 54:  Label = 5   Predicted = 5   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 55:  Label = 5   Predicted = 5   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 56:  Label = 5   Predicted = 5   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 57:  Label = 5   Predicted = 5   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 58:  Label = 5   Predicted = 5   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 59:  Label = 5   Predicted = 5   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 60:  Label = 6   Predicted = 6   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 61:  Label = 6   Predicted = 6   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 62:  Label = 6   Predicted = 6   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 63:  Label = 6   Predicted = 6   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 64:  Label = 6   Predicted = 6   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 65:  Label = 6   Predicted = 6   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 66:  Label = 6   Predicted = 6   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 67:  Label = 6   Predicted = 6   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 68:  Label = 6   Predicted = 6   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 69:  Label = 6   Predicted = 6   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 70:  Label = 7   Predicted = 7   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 71:  Label = 7   Predicted = 7   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 72:  Label = 7   Predicted = 7   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 73:  Label = 7   Predicted = 7   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 74:  Label = 7   Predicted = 7   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 75:  Label = 7   Predicted = 7   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 76:  Label = 7   Predicted = 7   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 77:  Label = 7   Predicted = 7   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 78:  Label = 7   Predicted = 7   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 79:  Label = 7   Predicted = 7   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 80:  Label = 8   Predicted = 8   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 81:  Label = 8   Predicted = 8   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 82:  Label = 8   Predicted = 8   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 83:  Label = 8   Predicted = 8   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 84:  Label = 8   Predicted = 8   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 85:  Label = 8   Predicted = 8   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 86:  Label = 8   Predicted = 8   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 87:  Label = 8   Predicted = 8   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 88:  Label = 8   Predicted = 8   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 89:  Label = 8   Predicted = 8   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 90:  Label = 9   Predicted = 9   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 91:  Label = 9   Predicted = 9   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 92:  Label = 9   Predicted = 9   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 93:  Label = 9   Predicted = 9   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 94:  Label = 9   Predicted = 9   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 95:  Label = 9   Predicted = 9   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 96:  Label = 9   Predicted = 9   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 97:  Label = 9   Predicted = 9   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 98:  Label = 9   Predicted = 9   Matrix mismatches = 0   Cycles = 18407   Resets = 466
-# Image 99:  Label = 9   Predicted = 9   Matrix mismatches = 0   Cycles = 18407   Resets = 466
+# Image  0:  Label = 0   Predicted = 0
+# Image  1:  Label = 0   Predicted = 0
+# Image  2:  Label = 0   Predicted = 0
+# Image  3:  Label = 0   Predicted = 0
+# Image  4:  Label = 0   Predicted = 0
+# Image  5:  Label = 0   Predicted = 0
+# Image  6:  Label = 0   Predicted = 0
+# Image  7:  Label = 0   Predicted = 0
+# Image  8:  Label = 0   Predicted = 0
+# Image  9:  Label = 0   Predicted = 0
+# Image 10:  Label = 1   Predicted = 1
+# Image 11:  Label = 1   Predicted = 1
+# Image 12:  Label = 1   Predicted = 1
+# Image 13:  Label = 1   Predicted = 1
+# Image 14:  Label = 1   Predicted = 1
+# Image 15:  Label = 1   Predicted = 1
+# Image 16:  Label = 1   Predicted = 1
+# Image 17:  Label = 1   Predicted = 1
+# Image 18:  Label = 1   Predicted = 1
+# Image 19:  Label = 1   Predicted = 1
+# Image 20:  Label = 2   Predicted = 2
+# Image 21:  Label = 2   Predicted = 2
+# Image 22:  Label = 2   Predicted = 2
+# Image 23:  Label = 2   Predicted = 2
+# Image 24:  Label = 2   Predicted = 2
+# Image 25:  Label = 2   Predicted = 2
+# Image 26:  Label = 2   Predicted = 2
+# Image 27:  Label = 2   Predicted = 2
+# Image 28:  Label = 2   Predicted = 2
+# Image 29:  Label = 2   Predicted = 2
+# Image 30:  Label = 3   Predicted = 3
+# Image 31:  Label = 3   Predicted = 3
+# Image 32:  Label = 3   Predicted = 3
+# Image 33:  Label = 3   Predicted = 3
+# Image 34:  Label = 3   Predicted = 3
+# Image 35:  Label = 3   Predicted = 3
+# Image 36:  Label = 3   Predicted = 3
+# Image 37:  Label = 3   Predicted = 3
+# Image 38:  Label = 3   Predicted = 3
+# Image 39:  Label = 3   Predicted = 3
+# Image 40:  Label = 4   Predicted = 4
+# Image 41:  Label = 4   Predicted = 4
+# Image 42:  Label = 4   Predicted = 4
+# Image 43:  Label = 4   Predicted = 4
+# Image 44:  Label = 4   Predicted = 4
+# Image 45:  Label = 4   Predicted = 4
+# Image 46:  Label = 4   Predicted = 4
+# Image 47:  Label = 4   Predicted = 4
+# Image 48:  Label = 4   Predicted = 4
+# Image 49:  Label = 4   Predicted = 4
+# Image 50:  Label = 5   Predicted = 5
+# Image 51:  Label = 5   Predicted = 5
+# Image 52:  Label = 5   Predicted = 5
+# Image 53:  Label = 5   Predicted = 5
+# Image 54:  Label = 5   Predicted = 5
+# Image 55:  Label = 5   Predicted = 5
+# Image 56:  Label = 5   Predicted = 5
+# Image 57:  Label = 5   Predicted = 5
+# Image 58:  Label = 5   Predicted = 5
+# Image 59:  Label = 5   Predicted = 5
+# Image 60:  Label = 6   Predicted = 6
+# Image 61:  Label = 6   Predicted = 6
+# Image 62:  Label = 6   Predicted = 6
+# Image 63:  Label = 6   Predicted = 6
+# Image 64:  Label = 6   Predicted = 6
+# Image 65:  Label = 6   Predicted = 6
+# Image 66:  Label = 6   Predicted = 6
+# Image 67:  Label = 6   Predicted = 6
+# Image 68:  Label = 6   Predicted = 6
+# Image 69:  Label = 6   Predicted = 6
+# Image 70:  Label = 7   Predicted = 7
+# Image 71:  Label = 7   Predicted = 7
+# Image 72:  Label = 7   Predicted = 7
+# Image 73:  Label = 7   Predicted = 7
+# Image 74:  Label = 7   Predicted = 7
+# Image 75:  Label = 7   Predicted = 7
+# Image 76:  Label = 7   Predicted = 7
+# Image 77:  Label = 7   Predicted = 7
+# Image 78:  Label = 7   Predicted = 7
+# Image 79:  Label = 7   Predicted = 7
+# Image 80:  Label = 8   Predicted = 8
+# Image 81:  Label = 8   Predicted = 8
+# Image 82:  Label = 8   Predicted = 8
+# Image 83:  Label = 8   Predicted = 8
+# Image 84:  Label = 8   Predicted = 8
+# Image 85:  Label = 8   Predicted = 8
+# Image 86:  Label = 8   Predicted = 8
+# Image 87:  Label = 8   Predicted = 8
+# Image 88:  Label = 8   Predicted = 8
+# Image 89:  Label = 8   Predicted = 8
+# Image 90:  Label = 9   Predicted = 9
+# Image 91:  Label = 9   Predicted = 9
+# Image 92:  Label = 9   Predicted = 9
+# Image 93:  Label = 9   Predicted = 9
+# Image 94:  Label = 9   Predicted = 9
+# Image 95:  Label = 9   Predicted = 9
+# Image 96:  Label = 9   Predicted = 9
+# Image 97:  Label = 9   Predicted = 9
+# Image 98:  Label = 9   Predicted = 9
+# Image 99:  Label = 9   Predicted = 9
 # 
 # Accuracy                  : 100/100 (100.00%)
 # Matrix product mismatches : 0/472800
-# ** Note: $finish    : CNN_Testbench.v(247)
+# Active cycles per image   : 18407
+# Resets per image          : 466
+# ** Note: $finish    : CNN_testbench.v(265)
 #    Time: 18873006 ns  Iteration: 0  Instance: /CNN_Testbench
-# End time: 19:37:42 on Nov 25,2026, Elapsed time: 0:01:49
+# End time: 20:25:59 on Nov 25,2026, Elapsed time: 0:00:52
 # Errors: 0, Warnings: 0
