@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Kavyam Agarwal/Desktop/Study/Sem 3/EE224/Assignment/EE224_Course_project/PE
+vProcessing_element
+Z1 !s110 1795617943
+!i10b 1
+!s100 G6S1Y4[oaWZI>n@E<?ak<3
+IX8To]iIbQ2diDa?FZbj0K0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1795615784
+8Processing_element.v
+FProcessing_element.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1795617942.000000
+Z5 !s107 Processing_element_TB.v|Processing_element.v|
+Z6 !s90 Processing_element.v|Processing_element_TB.v|
+!i113 1
+Z7 tCvgOpt 0
+n@processing_element
+vProcessing_element_TB
+R1
+!i10b 1
+!s100 i^C[4e3HjcknidV9?@nVz3
+I:X6dc5H>S=db3BmiM;<B_1
+R2
+R0
+w1795617685
+8Processing_element_TB.v
+FProcessing_element_TB.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@processing_element_@t@b

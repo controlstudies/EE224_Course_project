@@ -4,23 +4,23 @@ module Testbench;
 
     parameter ROW = 4;
     parameter COL = 4;
-    parameter W   = 8;
-    parameter A   = 32;
-    parameter K   = 4;
+    parameter W = 8;
+    parameter A = 32;
+    parameter K = 4;
 
-    reg                          clk;
-    reg                          rst;
-    reg  [COL*W-1:0]             ain_flat;
-    reg  [ROW*W-1:0]             bin_flat;
-    wire [ROW*COL*A-1:0]     out_flat;
+    reg clk;
+    reg rst;
+    reg [COL*W-1:0] ain_flat;
+    reg [ROW*W-1:0] bin_flat;
+    wire [ROW*COL*A-1:0] out_flat;
 
-    // Internal 2D arrays in testbench (allowed inside Verilog-2001 modules)
-    reg [W-1:0] A_mat [0:K-1][0:COL-1]; // Enters top edge (ain)
-    reg [W-1:0] B_mat [0:ROW-1][0:K-1]; // Enters left edge (bin)
+    // matrices to be multiplied
+    reg [W-1:0] A_mat [0:K-1][0:COL-1]; // top inputs
+    reg [W-1:0] B_mat [0:ROW-1][0:K-1]; // left inputs
     reg [A-1:0] C_golden [0:ROW-1][0:COL-1];
-    wire [A-1:0] out_2d   [0:ROW-1][0:COL-1];
+    wire [A-1:0] out_2d [0:ROW-1][0:COL-1];
 
-    // Unpack out_flat back into a 2D wire array for easy viewing & checking
+    // convert out_flat to a 2D matrix for the waveform
     genvar gi, gk;
     generate
         for (gi = 0; gi < ROW; gi = gi + 1) begin : unpack_out_r
@@ -30,7 +30,6 @@ module Testbench;
         end
     endgenerate
 
-    // Instantiate Unit Under Test (UUT)
     systolic_array #(
         .row(ROW),
         .col(COL),
@@ -44,19 +43,18 @@ module Testbench;
         .out_flat(out_flat)
     );
 
-    // 100 MHz Clock (10 ns period)
+    // 10 ns clock period
     always #5 clk = ~clk;
 
-    integer r, c, m, t, errors;
-
-    initial begin
+    initial begin : test
+        integer r, c, m, t, errors;
         clk = 0;
         rst = 1;
         ain_flat = 0;
         bin_flat = 0;
         errors = 0;
 
-        // 1. Initialize test matrices
+        // initialise matrices
         for (r = 0; r < ROW; r = r + 1) begin
             for (c = 0; c < COL; c = c + 1) begin
                 C_golden[r][c] = 0;
@@ -71,7 +69,7 @@ module Testbench;
             for (c = 0; c < COL; c = c + 1)
                 A_mat[m][c] = c + 1;
 
-        // 2. Compute expected golden result: C[r][c] = sum_m( B_mat[r][m] * A_mat[m][c] )
+        // calculate B_mat * A_mat for comparison
         for (r = 0; r < ROW; r = r + 1) begin
             for (c = 0; c < COL; c = c + 1) begin
                 for (m = 0; m < K; m = m + 1) begin
@@ -80,14 +78,13 @@ module Testbench;
             end
         end
 
-        // Release reset
         #12 rst = 0;
 
-        // 3. Feed diagonally skewed data into flattened buses over K+ROW+COL-2 cycles
+        // send inputs for K+ROW+COL-2 cycles
         for (t = 0; t < (K + ROW + COL - 2); t = t + 1) begin
             @(negedge clk);
 
-            // Pack skewed bin (left edge): row r is delayed by r cycles
+            // delay row r by r cycles
             for (r = 0; r < ROW; r = r + 1) begin
                 if (t >= r && (t - r) < K)
                     bin_flat[r*W +: W] = B_mat[r][t - r];
@@ -95,7 +92,7 @@ module Testbench;
                     bin_flat[r*W +: W] = {W{1'b0}};
             end
 
-            // Pack skewed ain (top edge): col c is delayed by c cycles
+            // delay column c by c cycles
             for (c = 0; c < COL; c = c + 1) begin
                 if (t >= c && (t - c) < K)
                     ain_flat[c*W +: W] = A_mat[t - c][c];
@@ -104,15 +101,14 @@ module Testbench;
             end
         end
 
-        // Clear inputs after streaming finishes
         @(negedge clk);
         ain_flat = 0;
         bin_flat = 0;
 
         #20;
 
-        // 4. Verify hardware output against golden reference
-        $display("\n--- Systolic Array Output Matrix ---");
+        // print and compare the result
+        $display("\nOutput matrix:");
         for (r = 0; r < ROW; r = r + 1) begin
             for (c = 0; c < COL; c = c + 1) begin
                 $write("%4d ", out_2d[r][c]);
@@ -123,10 +119,7 @@ module Testbench;
             $write("\n");
         end
 
-        if (errors == 0)
-            $display("\nSUCCESS: All %0d PE outputs match the golden matrix multiplication", ROW*COL);
-        else
-            $display("\nERROR: Found %0d mismatches.", errors);
+        $display("\nMatrix mismatches: %0d/%0d", errors, ROW*COL);
 
         $finish;
     end
