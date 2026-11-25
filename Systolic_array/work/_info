@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Kavyam Agarwal/Desktop/Study/Sem 3/EE224/Assignment/EE224_Course_project/Systolic_array
+vCNN_Testbench
+Z1 !s110 1795599021
+!i10b 1
+!s100 m9lS]TN7BY4>5b01TA?Y83
+IJUg92FD1R7NoZ>BCld=OX3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1795590716
+8CNN_Testbench.v
+FCNN_Testbench.v
+L0 5
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1795599021.000000
+Z5 !s107 CNN_Testbench.v|systolic_array.v|pe.v|
+Z6 !s90 pe.v|systolic_array.v|CNN_Testbench.v|
+!i113 1
+Z7 tCvgOpt 0
+n@c@n@n_@testbench
+vprocessing_element
+R1
+!i10b 1
+!s100 FYI[BIDGS9UbaaG=`G51>2
+IoVC?b]M;@XofDhXZR^W0C1
+R2
+R0
+w1795590605
+8pe.v
+Fpe.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vsystolic_array
+R1
+!i10b 1
+!s100 :bzWn?YYJ^WZz`=S=Q4423
+IJFc:n4mC]5CTJ65bz_joj0
+R2
+R0
+w1795590653
+8systolic_array.v
+Fsystolic_array.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vTestbench
+!s110 1795591170
+!i10b 1
+!s100 >fiRD?LS@N9E>VmcB0deH2
+IMhmCLhz0UU[PKf^]SJmlB2
+R2
+R0
+w1795590684
+8Testbench.v
+FTestbench.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1795591169.000000
+!s107 Testbench.v|systolic_array.v|pe.v|
+!s90 pe.v|systolic_array.v|Testbench.v|
+!i113 1
+R7
+n@testbench
