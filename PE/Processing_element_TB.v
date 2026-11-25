@@ -1,0 +1,128 @@
+`timescale 1ns / 1ps
+
+module Processing_element_TB;
+
+    // Parameters
+    localparam W = 8;
+    localparam CLK_PERIOD = 10; // 100 MHz clock
+
+    // Testbench signals
+    reg              clk;
+    reg              rst;
+    reg  [W-1:0]     ain;
+    reg  [W-1:0]     bin;
+    wire [W-1:0]     aout;
+    wire [W-1:0]     bout;
+    wire [2*W-1:0]   cout;
+
+    // Reference model variables for self-checking
+    reg  [W-1:0]     exp_aout;
+    reg  [W-1:0]     exp_bout;
+    reg  [2*W-1:0]   exp_cout;
+    integer          errors = 0;
+
+    // Instantiate the Device Under Test (DUT)
+    Processing_element #(
+        .W(W)
+    ) dut (
+        .clk  (clk),
+        .rst  (rst),
+        .ain  (ain),
+        .bin  (bin),
+        .aout (aout),
+        .bout (bout),
+        .cout (cout)
+    );
+
+    // Clock generation
+    initial clk = 0;
+    always #(CLK_PERIOD/2) clk = ~clk;
+
+    // Task to apply inputs and check outputs on the next clock edge
+    task apply_and_check(input [W-1:0] a, input [W-1:0] b);
+        begin
+            @(negedge clk);
+            ain = a;
+            bin = b;
+
+            // Update expected values
+            exp_aout = a;
+            exp_bout = b;
+            exp_cout = exp_cout + (a * b);
+
+            @(posedge clk);
+            #1; // Small delay to allow non-blocking assignments to settle
+
+            if (aout !== exp_aout || bout !== exp_bout || cout !== exp_cout) begin
+                $display("[FAIL] Time=%0t | ain=%0d bin=%0d | Got: aout=%0d bout=%0d cout=%0d | Exp: aout=%0d bout=%0d cout=%0d",
+                         $time, ain, bin, aout, bout, cout, exp_aout, exp_bout, exp_cout);
+                errors = errors + 1;
+            end else begin
+                $display("[PASS] Time=%0t | ain=%0d bin=%0d | aout=%0d bout=%0d cout=%0d",
+                         $time, ain, bin, aout, bout, cout);
+            end
+        end
+    endtask
+
+    initial begin
+        $dumpfile("Processing_element_TB.vcd");
+        $dumpvars(0, Processing_element_TB);
+
+        // Initialize signals
+        rst      = 1;
+        ain      = 0;
+        bin      = 0;
+        exp_aout = 0;
+        exp_bout = 0;
+        exp_cout = 0;
+
+        // 1. Test initial reset
+        #(CLK_PERIOD);
+        if (aout !== 0 || bout !== 0 || cout !== 0) begin
+            $display("[FAIL] Reset failed! aout=%0d bout=%0d cout=%0d", aout, bout, cout);
+            errors = errors + 1;
+        end else begin
+            $display("[PASS] Initial reset verified.");
+        end
+        @(negedge clk);
+        rst = 0;
+
+        // 2. Test basic MAC accumulation
+        apply_and_check(8'd3,  8'd4);   // cout = 0 + 12 = 12
+        apply_and_check(8'd5,  8'd6);   // cout = 12 + 30 = 42
+        apply_and_check(8'd10, 8'd2);   // cout = 42 + 20 = 62
+
+        // 3. Test zero inputs (cout should hold previous value)
+        apply_and_check(8'd0,  8'd15);  // cout = 62 + 0 = 62
+        apply_and_check(8'd20, 8'd0);   // cout = 62 + 0 = 62
+
+        // 4. Test asynchronous reset mid-operation
+        #3; // Assert reset away from clock edge
+        rst = 1;
+        exp_aout = 0;
+        exp_bout = 0;
+        exp_cout = 0;
+        #1;
+        if (aout !== 0 || bout !== 0 || cout !== 0) begin
+            $display("[FAIL] Async reset failed! aout=%0d bout=%0d cout=%0d", aout, bout, cout);
+            errors = errors + 1;
+        end else begin
+            $display("[PASS] Asynchronous reset mid-operation verified.");
+        end
+
+        // test large values
+        @(negedge clk);
+        rst = 0;
+        apply_and_check(8'd255, 8'd255); // cout = 65025 (max 8x8 product)
+
+        // Summary
+        #(CLK_PERIOD);
+        if (errors == 0)
+            $display("\nALL TESTS PASSED!");
+        else
+            $display("\nTESTS FAILED WITH %0d ERRORS.", errors);
+
+        $finish;
+    end
+
+endmodule

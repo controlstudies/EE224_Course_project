@@ -1,0 +1,389 @@
+$date
+	Wed Nov 25 11:18:50 2026
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module Processing_element_TB $end
+$var parameter 32 ! W $end
+$var parameter 32 " CLK_PERIOD $end
+$var reg 1 # clk $end
+$var reg 1 $ rst $end
+$var reg 8 % ain [7:0] $end
+$var reg 8 & bin [7:0] $end
+$var wire 1 ' aout [7] $end
+$var wire 1 ( aout [6] $end
+$var wire 1 ) aout [5] $end
+$var wire 1 * aout [4] $end
+$var wire 1 + aout [3] $end
+$var wire 1 , aout [2] $end
+$var wire 1 - aout [1] $end
+$var wire 1 . aout [0] $end
+$var wire 1 / bout [7] $end
+$var wire 1 0 bout [6] $end
+$var wire 1 1 bout [5] $end
+$var wire 1 2 bout [4] $end
+$var wire 1 3 bout [3] $end
+$var wire 1 4 bout [2] $end
+$var wire 1 5 bout [1] $end
+$var wire 1 6 bout [0] $end
+$var wire 1 7 cout [15] $end
+$var wire 1 8 cout [14] $end
+$var wire 1 9 cout [13] $end
+$var wire 1 : cout [12] $end
+$var wire 1 ; cout [11] $end
+$var wire 1 < cout [10] $end
+$var wire 1 = cout [9] $end
+$var wire 1 > cout [8] $end
+$var wire 1 ? cout [7] $end
+$var wire 1 @ cout [6] $end
+$var wire 1 A cout [5] $end
+$var wire 1 B cout [4] $end
+$var wire 1 C cout [3] $end
+$var wire 1 D cout [2] $end
+$var wire 1 E cout [1] $end
+$var wire 1 F cout [0] $end
+$var reg 8 G exp_aout [7:0] $end
+$var reg 8 H exp_bout [7:0] $end
+$var reg 16 I exp_cout [15:0] $end
+$var integer 32 J errors $end
+
+$scope task apply_and_check $end
+$var reg 8 K a [7:0] $end
+$var reg 8 L b [7:0] $end
+$upscope $end
+
+$scope module dut $end
+$var parameter 32 M W $end
+$var wire 1 N clk $end
+$var wire 1 O rst $end
+$var wire 1 P ain [7] $end
+$var wire 1 Q ain [6] $end
+$var wire 1 R ain [5] $end
+$var wire 1 S ain [4] $end
+$var wire 1 T ain [3] $end
+$var wire 1 U ain [2] $end
+$var wire 1 V ain [1] $end
+$var wire 1 W ain [0] $end
+$var wire 1 X bin [7] $end
+$var wire 1 Y bin [6] $end
+$var wire 1 Z bin [5] $end
+$var wire 1 [ bin [4] $end
+$var wire 1 \ bin [3] $end
+$var wire 1 ] bin [2] $end
+$var wire 1 ^ bin [1] $end
+$var wire 1 _ bin [0] $end
+$var reg 8 ` aout [7:0] $end
+$var reg 8 a bout [7:0] $end
+$var reg 16 b cout [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0#
+1$
+b0 %
+b0 &
+b0 G
+b0 H
+b0 I
+b0 `
+b0 a
+b0 b
+bx K
+bx L
+b1000 !
+b1010 "
+b1000 M
+b0 J
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+06
+05
+04
+03
+02
+01
+00
+0/
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+1O
+0N
+$end
+#5000
+1#
+1N
+#10000
+0#
+0N
+0$
+b11 K
+b100 L
+0O
+#15000
+1#
+1N
+#20000
+0#
+0N
+b11 %
+b100 &
+b11 G
+b100 H
+b1100 I
+1]
+1W
+1V
+#25000
+1#
+1N
+b11 `
+b100 a
+b1100 b
+1D
+1C
+14
+1.
+1-
+#26000
+b101 K
+b110 L
+#30000
+0#
+0N
+b101 %
+b110 &
+b101 G
+b110 H
+b101010 I
+1^
+0V
+1U
+#35000
+1#
+1N
+b101 `
+b110 a
+b101010 b
+1E
+0D
+1A
+15
+0-
+1,
+#36000
+b1010 K
+b10 L
+#40000
+0#
+0N
+b1010 %
+b10 &
+b1010 G
+b10 H
+b111110 I
+0]
+0W
+1V
+0U
+1T
+#45000
+1#
+1N
+b1010 `
+b10 a
+b111110 b
+1D
+1B
+04
+0.
+1-
+0,
+1+
+#46000
+b0 K
+b1111 L
+#50000
+0#
+0N
+b0 %
+b1111 &
+b0 G
+b1111 H
+1_
+1]
+1\
+0V
+0T
+#55000
+1#
+1N
+b0 `
+b1111 a
+16
+14
+13
+0-
+0+
+#56000
+b10100 K
+b0 L
+#60000
+0#
+0N
+b10100 %
+b0 &
+b10100 G
+b0 H
+0_
+0^
+0]
+0\
+1U
+1S
+#65000
+1#
+1N
+b10100 `
+b0 a
+06
+05
+04
+03
+1,
+1*
+#69000
+1$
+b0 G
+b0 I
+1O
+b0 `
+b0 b
+0E
+0D
+0C
+0B
+0A
+0,
+0*
+#70000
+0#
+0N
+#75000
+1#
+1N
+#80000
+0#
+0N
+0$
+b11111111 K
+b11111111 L
+0O
+#85000
+1#
+1N
+b10100 `
+1,
+1*
+#90000
+0#
+0N
+b11111111 %
+b11111111 &
+b11111111 G
+b11111111 H
+b1111111000000001 I
+1_
+1^
+1]
+1\
+1[
+1Z
+1Y
+1X
+1W
+1V
+1T
+1R
+1Q
+1P
+#95000
+1#
+1N
+b11111111 `
+b11111111 a
+b1111111000000001 b
+1F
+1=
+1<
+1;
+1:
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+1/
+1.
+1-
+1+
+1)
+1(
+1'
+#100000
+0#
+0N
+#105000
+1#
+1N
+b1111110000000010 b
+0F
+1E
+0=
