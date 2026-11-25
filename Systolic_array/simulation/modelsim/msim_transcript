@@ -10,44 +10,44 @@
 # Copying E:/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+E:/EE224_Project {E:/EE224_Project/pe.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/prata/EE224_Course_project/Systolic_array {C:/Users/prata/EE224_Course_project/Systolic_array/pe.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:55:28 on Nov 01,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/EE224_Project" E:/EE224_Project/pe.v 
-# -- Compiling module processing_element
+# Start time: 22:14:32 on Nov 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/prata/EE224_Course_project/Systolic_array" C:/Users/prata/EE224_Course_project/Systolic_array/pe.v 
+# -- Compiling module Processing_element
 # 
 # Top level modules:
-# 	processing_element
-# End time: 18:55:28 on Nov 01,2026, Elapsed time: 0:00:00
+# 	Processing_element
+# End time: 22:14:32 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/EE224_Project {E:/EE224_Project/systolic_array.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/prata/EE224_Course_project/Systolic_array {C:/Users/prata/EE224_Course_project/Systolic_array/systolic_array.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:55:28 on Nov 01,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/EE224_Project" E:/EE224_Project/systolic_array.v 
+# Start time: 22:14:32 on Nov 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/prata/EE224_Course_project/Systolic_array" C:/Users/prata/EE224_Course_project/Systolic_array/systolic_array.v 
 # -- Compiling module systolic_array
 # 
 # Top level modules:
 # 	systolic_array
-# End time: 18:55:28 on Nov 01,2026, Elapsed time: 0:00:00
+# End time: 22:14:32 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+E:/EE224_Project {E:/EE224_Project/Testbench.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/prata/EE224_Course_project/Systolic_array {C:/Users/prata/EE224_Course_project/Systolic_array/Testbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:55:28 on Nov 01,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/EE224_Project" E:/EE224_Project/Testbench.v 
+# Start time: 22:14:32 on Nov 25,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/prata/EE224_Course_project/Systolic_array" C:/Users/prata/EE224_Course_project/Systolic_array/Testbench.v 
 # -- Compiling module Testbench
 # 
 # Top level modules:
 # 	Testbench
-# End time: 18:55:28 on Nov 01,2026, Elapsed time: 0:00:00
+# End time: 22:14:32 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  Testbench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" Testbench 
-# Start time: 18:55:28 on Nov 01,2026
+# Start time: 22:14:32 on Nov 25,2026
 # Loading work.Testbench
 # Loading work.systolic_array
-# Loading work.processing_element
+# Loading work.Processing_element
 # 
 # add wave *
 # view structure
@@ -56,20 +56,16 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # 
-# --- Systolic Array 8x8 Output Matrix ---
-#    8   16   24   32   40   48   56   64 
-#   16   32   48   64   80   96  112  128 
-#   24   48   72   96  120  144  168  192 
-#   32   64   96  128  160  192  224  256 
-#   40   80  120  160  200  240  280  320 
-#   48   96  144  192  240  288  336  384 
-#   56  112  168  224  280  336  392  448 
-#   64  128  192  256  320  384  448  512 
+# --- Systolic Array Output Matrix ---
+#    4    8   12   16 
+#    8   16   24   32 
+#   12   24   36   48 
+#   16   32   48   64 
 # 
-# SUCCESS: All 64 PE outputs match the golden matrix multiplication!
-# ** Note: $finish    : E:/EE224_Project/Testbench.v(122)
-#    Time: 280 ns  Iteration: 0  Instance: /Testbench
+# SUCCESS: All 16 PE outputs match the golden matrix multiplication
+# ** Note: $finish    : C:/Users/prata/EE224_Course_project/Systolic_array/Testbench.v(131)
+#    Time: 140 ns  Iteration: 0  Instance: /Testbench
 # 1
-# Break in Module Testbench at E:/EE224_Project/Testbench.v line 122
-# End time: 18:55:42 on Nov 01,2026, Elapsed time: 0:00:14
+# Break in Module Testbench at C:/Users/prata/EE224_Course_project/Systolic_array/Testbench.v line 131
+# End time: 22:14:49 on Nov 25,2026, Elapsed time: 0:00:17
 # Errors: 0, Warnings: 0

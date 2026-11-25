@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/prata/EE224_Course_project/PE/simulation/modelsim
 vProcessing_element
-!s110 1795585461
+!s110 1795586836
 !i10b 1
-!s100 S5GAa9SLfQ^XHQh?BOJhX2
+!s100 XL6;^iUcC0hn88V3U@8X>3
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IGC:m_ATfYm:^Q3l5?SJi63
+IjH7m3IUFga5O:SOdXZBDn3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1795584979
+w1795586713
 8C:/Users/prata/EE224_Course_project/PE/Processing_element.v
 FC:/Users/prata/EE224_Course_project/PE/Processing_element.v
 !i122 0
-L0 1 26
+L0 1 27
 Z3 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1795585460.000000
+!s108 1795586836.000000
 !s107 C:/Users/prata/EE224_Course_project/PE/Processing_element.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/prata/EE224_Course_project/PE|C:/Users/prata/EE224_Course_project/PE/Processing_element.v|
 !i113 1
@@ -35,7 +35,7 @@ Z4 o-vlog01compat -work work
 Z5 tCvgOpt 0
 n@processing_element
 vProcessing_element_TB
-!s110 1795585726
+!s110 1795586881
 !i10b 1
 !s100 Aa4U?RM?:M8>JL<cjSFDY0
 R1
@@ -45,13 +45,13 @@ R0
 w1795585713
 8C:\Users\prata\EE224_Course_project\PE\Processing_element_TB.v
 FC:\Users\prata\EE224_Course_project\PE\Processing_element_TB.v
-!i122 2
+!i122 1
 L0 3 126
 R3
 r1
 !s85 0
 31
-!s108 1795585726.000000
+!s108 1795586881.000000
 !s107 C:\Users\prata\EE224_Course_project\PE\Processing_element_TB.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|C:\Users\prata\EE224_Course_project\PE\Processing_element_TB.v|
 !i113 1

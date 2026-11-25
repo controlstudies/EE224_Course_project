@@ -1,5 +1,6 @@
 module Processing_element #(
     parameter W = 8 // largest number allowed 2^w-1
+
 )(
     input  wire clk,
     input  wire rst,

@@ -8,51 +8,52 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dE:/EE224_Project/simulation/modelsim
-vprocessing_element
-Z1 !s110 1793539528
+Z0 dC:/Users/prata/EE224_Course_project/Systolic_array/simulation/modelsim
+vProcessing_element
+Z1 !s110 1795625072
 !i10b 1
-!s100 FEL2NlWIAlW9bVSV960OK0
+!s100 4nbBjliQ6`bTJV^QiX;hX3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I7?e<cIUZS29IA:F`4f1o^0
+Im]1lBKIc[mi;R]=d[GGhg0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1793538247
-8E:/EE224_Project/pe.v
-FE:/EE224_Project/pe.v
+w1795625038
+8C:/Users/prata/EE224_Course_project/Systolic_array/pe.v
+FC:/Users/prata/EE224_Course_project/Systolic_array/pe.v
 !i122 0
-L0 1 24
+L0 1 27
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1793539528.000000
-!s107 E:/EE224_Project/pe.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EE224_Project|E:/EE224_Project/pe.v|
+Z5 !s108 1795625072.000000
+!s107 C:/Users/prata/EE224_Course_project/Systolic_array/pe.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/prata/EE224_Course_project/Systolic_array|C:/Users/prata/EE224_Course_project/Systolic_array/pe.v|
 !i113 1
 Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work +incdir+E:/EE224_Project
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/prata/EE224_Course_project/Systolic_array
 Z8 tCvgOpt 0
+n@processing_element
 vsystolic_array
 R1
 !i10b 1
-!s100 8R0J@daQBMZR9EMfhfdhi0
+!s100 @T7mHN4bXj2;kO`fk]V5[1
 R2
-I;8;dR7NbTK;LQek`HSD3Z1
+I^De<BfcmzJoN37`MEcaog3
 R3
 R0
-w1793539487
-8E:/EE224_Project/systolic_array.v
-FE:/EE224_Project/systolic_array.v
+w1795624961
+8C:/Users/prata/EE224_Course_project/Systolic_array/systolic_array.v
+FC:/Users/prata/EE224_Course_project/Systolic_array/systolic_array.v
 !i122 1
-L0 1 44
+L0 1 92
 R4
 r1
 !s85 0
 31
 R5
-!s107 E:/EE224_Project/systolic_array.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EE224_Project|E:/EE224_Project/systolic_array.v|
+!s107 C:/Users/prata/EE224_Course_project/Systolic_array/systolic_array.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/prata/EE224_Course_project/Systolic_array|C:/Users/prata/EE224_Course_project/Systolic_array/systolic_array.v|
 !i113 1
 R6
 R7
@@ -60,23 +61,23 @@ R8
 vTestbench
 R1
 !i10b 1
-!s100 e5_709Kh_k1N4[XobLoMc2
+!s100 m19@oZM4Z;=M9f`HXjdA=1
 R2
-IB@4OPfo0X^Bm>a?e>i<nm2
+I`N:cNYVH7`aKj:bQS4Q4n2
 R3
 R0
-w1793539344
-8E:/EE224_Project/Testbench.v
-FE:/EE224_Project/Testbench.v
+w1795584388
+8C:/Users/prata/EE224_Course_project/Systolic_array/Testbench.v
+FC:/Users/prata/EE224_Course_project/Systolic_array/Testbench.v
 !i122 2
-L0 3 123
+L0 3 132
 R4
 r1
 !s85 0
 31
 R5
-!s107 E:/EE224_Project/Testbench.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EE224_Project|E:/EE224_Project/Testbench.v|
+!s107 C:/Users/prata/EE224_Course_project/Systolic_array/Testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/prata/EE224_Course_project/Systolic_array|C:/Users/prata/EE224_Course_project/Systolic_array/Testbench.v|
 !i113 1
 R6
 R7

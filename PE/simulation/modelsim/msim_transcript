@@ -12,71 +12,27 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/prata/EE224_Course_project/PE {C:/Users/prata/EE224_Course_project/PE/Processing_element.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:14:20 on Nov 25,2026
+# Start time: 11:37:16 on Nov 25,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/prata/EE224_Course_project/PE" C:/Users/prata/EE224_Course_project/PE/Processing_element.v 
 # -- Compiling module Processing_element
 # 
 # Top level modules:
 # 	Processing_element
-# End time: 11:14:21 on Nov 25,2026, Elapsed time: 0:00:01
+# End time: 11:37:16 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vlog -vlog01compat -work work {C:/Users/prata/EE224_Course_project/PE/tb_processing_element.v} vsim -voptargs=+acc work.Processing_element_TB add wave -r /* run -all
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# ** Error (suppressible): (vlog-1902) Option "-voptargs=+acc" is not a valid option for this tool.
-# Use the -help option for complete vlog usage.
-# Errors: 1, Warnings: 0
-# E:/Quartus/modelsim_ase/win32aloem/vlog failed.
-vlog -vlog01compat -work work {C:/Users/prata/EE224_Course_project/PE/tb_processing_element.v}; vsim -voptargs=+acc work.Processing_element_TB; add wave -r /*; run -all
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:16:03 on Nov 25,2026
-# vlog -reportprogress 300 -vlog01compat -work work C:/Users/prata/EE224_Course_project/PE/tb_processing_element.v 
-# ** Error: (vlog-7) Failed to open design unit file "C:/Users/prata/EE224_Course_project/PE/tb_processing_element.v" in read mode.
-# No such file or directory. (errno = ENOENT)
-# End time: 11:16:04 on Nov 25,2026, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-# E:/Quartus/modelsim_ase/win32aloem/vlog failed.
-vlog -vlog01compat -work work {C:/Users/prata/EE224_Course_project/PE/Processing_element_TB}; vsim -voptargs=+acc work.Processing_element_TB; add wave -r /*; run -all
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:16:33 on Nov 25,2026
-# vlog -reportprogress 300 -vlog01compat -work work C:/Users/prata/EE224_Course_project/PE/Processing_element_TB 
-# ** Error: (vlog-7) Failed to open design unit file "C:/Users/prata/EE224_Course_project/PE/Processing_element_TB" in read mode.
-# No such file or directory. (errno = ENOENT)
-# End time: 11:16:33 on Nov 25,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# E:/Quartus/modelsim_ase/win32aloem/vlog failed.
 vlog -vlog01compat -work work {C:\Users\prata\EE224_Course_project\PE\Processing_element_TB.v}; vsim -voptargs=+acc work.Processing_element_TB; add wave -r /*; run -all
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:17:51 on Nov 25,2026
+# Start time: 11:38:01 on Nov 25,2026
 # vlog -reportprogress 300 -vlog01compat -work work C:\Users\prata\EE224_Course_project\PE\Processing_element_TB.v 
 # -- Compiling module Processing_element_TB
 # 
 # Top level modules:
 # 	Processing_element_TB
-# End time: 11:17:51 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 11:38:01 on Nov 25,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.Processing_element_TB 
-# Start time: 11:17:51 on Nov 25,2026
-# Loading work.Processing_element_TB
-# Loading work.Processing_element
-# ** Error: (vsim-3043) Unresolved reference to 'tb_processing_element'.
-#    Time: 0 ps  Iteration: 0  Instance: /Processing_element_TB File: C:/Users/prata/EE224_Course_project/PE/Processing_element_TB.v Line: 69
-# Error loading design
-# End time: 11:17:51 on Nov 25,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# No Design Loaded!
-vlog -vlog01compat -work work {C:\Users\prata\EE224_Course_project\PE\Processing_element_TB.v}; vsim -voptargs=+acc work.Processing_element_TB; add wave -r /*; run -all
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:18:46 on Nov 25,2026
-# vlog -reportprogress 300 -vlog01compat -work work C:\Users\prata\EE224_Course_project\PE\Processing_element_TB.v 
-# -- Compiling module Processing_element_TB
-# 
-# Top level modules:
-# 	Processing_element_TB
-# End time: 11:18:46 on Nov 25,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" work.Processing_element_TB 
-# Start time: 11:18:46 on Nov 25,2026
+# Start time: 11:38:01 on Nov 25,2026
 # Loading work.Processing_element_TB
 # Loading work.Processing_element
 # [PASS] Initial reset verified.
@@ -93,5 +49,5 @@ vlog -vlog01compat -work work {C:\Users\prata\EE224_Course_project\PE\Processing
 #    Time: 106 ns  Iteration: 0  Instance: /Processing_element_TB
 # 1
 # Break in Module Processing_element_TB at C:/Users/prata/EE224_Course_project/PE/Processing_element_TB.v line 125
-# End time: 11:20:33 on Nov 25,2026, Elapsed time: 0:01:47
+# End time: 11:39:07 on Nov 25,2026, Elapsed time: 0:01:06
 # Errors: 0, Warnings: 0
